@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lista de Clientes</title>
+</head>
+<body>
+    <h1>Lista de Clientes</h1>
+    <ul>
+        {% for client in clients %}
+            <li>{{ client.nombre }} ({{ client.latitude }}, {{ client.longitude }})</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

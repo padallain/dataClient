@@ -1,0 +1,4 @@
+padallain2000
+fBFBEfCObBmcU4Nt
+
+mongodb+srv://padallain2000:fBFBEfCObBmcU4Nt@cluster0.hx9hkxb.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
