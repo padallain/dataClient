@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-rzi9dl^_bt05z%&h2b4ltcu(yji-s*y0652^%kvhcn1df3m+-9
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['your-app-name.onrender.com']
 
 
 # Application definition
@@ -78,10 +78,9 @@ WSGI_APPLICATION = 'quickstart.wsgi.application'
 
 DATABASES = {
     "default": django_mongodb_backend.parse_uri(
-        "mongodb+srv://padallain2000:fBFBEfCObBmcU4Nt@cluster0.hx9hkxb.mongodb.net/my_database?retryWrites=true&w=majority&appName=Cluster0"
+        "mongodb+srv://padallain2000:fBFBEfCObBmcU4Nt@cluster0.hx9hkxb.mongodb.net/my_database?retryWrites=true&w=majority"
     ),
 }
-
 # Password validation
 # https://docs.djangoproject.com/en/5.1/ref/settings/#auth-password-validators
 
@@ -116,7 +115,8 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.1/howto/static-files/
 
-STATIC_URL = 'static/'
+STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
